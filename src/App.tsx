@@ -1,13 +1,11 @@
-import styled from 'styled-components'
+import { FooterContainer } from './containers/Footer'
+import { JumbotronContainer } from './containers/jumbotron'
 
-export const App = () => {
+export const App = (): JSX.Element => {
 	return (
 		<>
-			<Title>Netflix React-app</Title>
+			<JumbotronContainer />
+			<FooterContainer />
 		</>
 	)
 }
-
-const Title = styled.h1`
-	color: blue;
-`
